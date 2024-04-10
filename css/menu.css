@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #9d9c9c;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#links a:hover {
+    background-color: rgb(200, 200, 200);
+    height: 100%;
+}
+
+footer{
+    background-color: rgb(157, 156, 156);
+    color: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, textarea, button{
+    background-color: rgb(129, 128, 128);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+textarea{
+    max-height: 100px;
+}
+
+::placeholder{
+    color: rgb(209, 206, 206);
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+button{
+    margin-top: 10px;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(129, 128, 128);
+    cursor: pointer;
+}
+
+
+#links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.banner {
+    width: 100%;
+    height: 900px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Adiciona uma transição suave */
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* Adiciona animação para transição entre imagens */
+  @keyframes changeImage {
+    0%, 100% { opacity: 0; } /* Define que a imagem está totalmente transparente no início e no final da animação */
+    12.5%, 87.5% { opacity: 1; } /* Define que a imagem está totalmente opaca nos intervalos entre a troca de imagens */
+  }
+  
+  /* Configura a animação */
+  .banner img {
+    animation: changeImage 21s linear infinite; /* Tempo de 16 segundos entre as imagens, animação linear e infinita */
+  }
+  
+  /* Defina o tempo para cada imagem (16 segundos / número de imagens) */
+  .banner img:nth-child(2) {
+    animation-delay: 3s; /* Começa após 2 segundos */
+  }
+  
+  .banner img:nth-child(3) {
+    animation-delay: 6s; /* Começa após 4 segundos */
+  }
+  
+  .banner img:nth-child(4) {
+    animation-delay: 9s; /* Começa após 6 segundos */
+  }
+  
+  .banner img:nth-child(5) {
+    animation-delay: 12s; /* Começa após 8 segundos */
+  }
+  
+  .banner img:nth-child(6) {
+    animation-delay: 15s; /* Começa após 10 segundos */
+  }
+  
+  .banner img:nth-child(7) {
+    animation-delay: 18s; /* Começa após 12 segundos */
+  }
+  
+  .banner img:nth-child(8) {
+    animation-delay: 21s; /* Começa após 14 segundos */
+  }
+
+
+  
